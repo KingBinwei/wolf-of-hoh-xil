@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://of3gcw33kv6b"]
+
+[ext_resource type="Texture2D" uid="uid://ckmlm5s5vcufv" path="res://assets/road.png" id="1_htopo"]
+[ext_resource type="Script" uid="uid://di6io0l86a0so" path="res://parallax_background.gd" id="1_mdx7g"]
+[ext_resource type="Script" path="res://highway_main.gd" id="2_main"]
+
+[sub_resource type="GDScript" id="GDScript_pu04k"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Highway" type="Node2D" unique_id=1127847204]
+script = ExtResource("2_main")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1788004650]
+script = ExtResource("1_mdx7g")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=658713599]
+motion_mirroring = Vector2(0, 648.192)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=649178925]
+scale = Vector2(0.4185138, 0.42244464)
+texture = ExtResource("1_htopo")
+centered = false

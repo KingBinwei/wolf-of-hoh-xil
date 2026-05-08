@@ -1,0 +1,7 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Claude Code session state
+.claude/session-state/
+.claude/session-logs/
