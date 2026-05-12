@@ -23,7 +23,29 @@ godot --path .
 ```
 Or open `highway.tscn` in the Godot editor and press F5.
 
-There is no test suite yet — the `tests/` directory is empty. There is no build step; Godot runs `.gd` scripts directly.
+### Run Smoke Test
+
+```bash
+"/c/Users/Binwei Kang/OneDrive/Desktop/Godot_v4.6.1-stable_win64.exe/Godot_v4.6.1-stable_win64_console.exe" --headless --path . --script res://tests/smoke_test.gd
+```
+
+### Chapter Publishing (章节发布)
+
+每章大更新完成后，使用以下方式自动推送到 GitHub：
+
+```bash
+# 方式1: 手动脚本
+bash tools/chapter_publish.sh <章节号> "<描述>"
+
+# 方式2: 提交信息以 "Chapter" 开头，hook 自动推送+打tag
+git commit -m "Chapter 2: 荒野探索 — 狼同伴系统"
+# → auto-push hook 自动执行 git push + git tag ch2
+```
+
+已设置 `PostToolUse` hook：任何 `git commit` 信息以 "Chapter" 开头时，自动推送到 `origin/main` 并打对应版本 tag。
+
+**GitHub**: https://github.com/KingBinwei/wolf-of-hoh-xil
+**Tags**: `ch1`, `ch2`, ...
 
 ## Engine Version Reference
 

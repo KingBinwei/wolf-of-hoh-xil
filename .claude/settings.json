@@ -81,6 +81,16 @@
             "timeout": 5
           }
         ]
+      },
+      {
+        "matcher": "Bash(git commit*)",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/auto-push-chapter.sh",
+            "timeout": 30
+          }
+        ]
       }
     ],
     "Notification": [
