@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bridqhu1q4o8f"]
 
-[ext_resource type="Texture2D" uid="uid://ds6fsxpw6tvbv" path="res://assets/wolf.png" id="1_fv4gx"]
-[ext_resource type="Script" path="res://wolf_controller.gd" id="2_k8j6y"]
+[ext_resource type="Texture2D" path="res://src/assets/wolf.png" id="1_fv4gx"]
+[ext_resource type="Script" path="res://src/scripts/player/wolf_controller.gd" id="2_k8j6y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ykb7g"]
 size = Vector2(84.5, 56)

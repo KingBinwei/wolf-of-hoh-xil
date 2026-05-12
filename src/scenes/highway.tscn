@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://of3gcw33kv6b"]
 
-[ext_resource type="Texture2D" uid="uid://ckmlm5s5vcufv" path="res://assets/road.png" id="1_htopo"]
-[ext_resource type="Script" uid="uid://di6io0l86a0so" path="res://parallax_background.gd" id="1_mdx7g"]
-[ext_resource type="Script" path="res://highway_main.gd" id="2_main"]
+[ext_resource type="Texture2D" path="res://src/assets/road.png" id="1_htopo"]
+[ext_resource type="Script" path="res://src/scripts/world/parallax_background.gd" id="1_mdx7g"]
+[ext_resource type="Script" path="res://src/scripts/core/highway_main.gd" id="2_main"]
 
 [sub_resource type="GDScript" id="GDScript_pu04k"]
 script/source = "extends Node2D
